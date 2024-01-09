@@ -34,38 +34,24 @@
     <section class="section">
       <div class="section__container">
         <div class="content">
-          <p class="subtitle">HELLO!</p>
-          <h1 class="title">
-            I'm <span>Woojune,<br /></span> a Full Stack Software Engineer
-          </h1>
-          <p class="description">
-            Welcome to my web developer portfolio! I'm Woojune, a detail oriented and an open minded computer science major at the University of Maryland. 
-            As an aspiring software engineer, I value strong technical fundamentals in computer science but 
-            deeply consider soft skills and mindfulness to be a dependable teammate. 
-          </p>
-          <div class="action__btns">
-            <button class="hire__me">
-              <a
-                href="https://imgur.com/a/TefNtIb"
-                target="_blank"
-                rel="noopener noreferrer"
-                >My Resume</a
-              >
-            </button>
-            <button class="portfolio">              <a
-                href="projects.html"
-                rel="noopener noreferrer"
-                >My Projects</a
-              ></button>
+          <p class="subtitle">Projects</p>
+          <div class="project-box" onclick="redirectToGitHub('premier-league-live-stats')">
+            <a href="https://confused-pig-wear.cyclic.app/">Premier League Live Stats</a>
           </div>
-        </div>
-        <div class="image">
-          <img
-            src="IMG_1394.jpg"
-            alt="profile"
-          />
+          <div class="project-box" onclick="redirectToGitHub('katkit-bluegames')">
+            <a href="https://github.com/woojcool/gradescalculator">Grades Calculator</a>
+          </div>
         </div>
       </div>
     </section>
+    <script>
+        function redirectToGitHub(projectName) {
+            if (projectName === 'premier-league-live-stats') {
+                window.location.href = 'https://confused-pig-wear.cyclic.app/';
+            } else {
+                window.location.href = `https://github.com/woojcool/${gradescalculator}`;
+            }
+        }
+    </script>
   </body>
 </html>
