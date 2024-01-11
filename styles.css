@@ -1,12 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
+html{
+  background-color: fff7f0;
+}
+
 :root {
-  --primary-color: #608093;
-  --primary-color-dark: #b5cbd5;
+  --primary-color: #1f2937;
+  --primary-color-dark: #755cde;
   --secondary-color: #ca8a04;
   --text-dark: #1f2937;
   --text-light: #1f2937;
-  --extra-light: #dfe6eb;
+  --extra-light: #fff7f0;
   --max-width: 1200px;
 }
 
@@ -22,6 +26,7 @@ a {
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #fff7f0;
 }
 
 nav {
@@ -29,7 +34,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #ffffff;
+  background-color: #fff7f0;
   z-index: 99;
   margin-bottom: 5rem;
 }
@@ -152,7 +157,7 @@ ul li a:hover {
 
 .hire__me {
   background-color: var(--primary-color);
-  color: #ffffff;
+  color: #fff7f0;
 }
 
 .hire__me:hover {
@@ -164,10 +169,32 @@ ul li a:hover {
   color: #ffffff;
 }
 
+.action__btns button a,
+.project-box a,
+.timeline-text a {
+  color: #fff7f0; /* Set the initial text color to white */
+  text-decoration: none; /* Remove default underline for links */
+}
+
+.hire__me a,
+.portfolio a,
+.project-box:hover a,
+.timeline-text a:hover {
+  color: #ffffff; /* Set the text color to white on hover */
+}
+
+.hire__me a:visited,
+.portfolio a:visited,
+.project-box a:visited,
+.timeline-text a:visited {
+  color: #ffffff; /* Set the text color to white for visited state */
+}
+
 .portfolio:hover {
   background-color: var(--primary-color-dark);
   color: #ffffff;
 }
+
 
 .image {
   display: grid;
@@ -248,3 +275,234 @@ ul li a:hover {
     background-color: #f5f5f5; /* Background color on hover */
   }
   
+
+  
+  .timeline-area{
+    padding-top: 50px;
+    background-color: #fff7f0;
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      background-color: #fff7f0;
+      font-family: "Poppins", sans-serif;
+    }
+    
+    ul {
+      list-style: none;
+      margin: 0 !important;
+    }
+    
+    a {
+      text-decoration: none !important;
+      display: inline-block;
+    }
+    
+    img {
+      max-width: 100%;
+    }
+    
+    button:focus {
+      outline: none;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+    }
+    p {
+      font-size: 14px;
+      line-height: 26px;
+      margin: 0;
+    }
+    .container {
+      width: 100%;
+      max-width: 1140px;
+      padding: 0 15px;
+      box-sizing: border-box;
+      margin: 0 auto;
+    }
+    .timelines h2 {
+      text-align: center;
+      color: #1f2937;
+      font-weight: 600;
+      margin-bottom: 40px;
+      font-size: 32px;
+    }
+    .d-flex-2 {
+      display: flex;
+      align-items: center;
+    }
+    .timeline-area {
+      padding: 80px 0;
+    }
+    .all-timelines {
+      position: relative;
+    }
+    .timelines h2 {
+      text-align: center;
+      color: #1f2937;
+      font-weight: 600;
+      margin-bottom: 40px;
+    }
+    .all-timelines::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      height: 100%;
+      width: 2px;
+      background: #1f2937;
+      top: 20px;
+    }
+    .single-timeline {
+      margin-bottom: 22px;
+    }
+    .timeline-blank {
+      width: 50%;
+    }
+    .timeline-text {
+      width: 50%;
+      padding-left: 30px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      position: relative;
+    }
+    .timeline-text h6 {
+      color: #1f2937;
+      font-weight: 900;
+      display: inline-block;
+      font-size: 1rem;
+    }
+    .timeline-text span {
+      color: #1f2937;
+      display: block;
+      width: 100%;
+    }
+    .single-timeline:nth-child(even) .timeline-text span {
+      text-align: left;
+    }
+    .t-square {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      left: -6px;
+      background: #1f2937;
+    }
+    .single-timeline:nth-child(even) {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+    }
+    .single-timeline:nth-child(even) .t-square {
+      right: -6px;
+      left: unset;
+    }
+    .single-timeline:nth-child(even) .timeline-text {
+      padding-left: 0;
+      padding-right: 30px;
+      text-align: right;
+    }
+    
+    @media all and (max-width: 991px) {
+    }
+    @media all and (max-width: 768px) {
+      .all-timelines::before {
+        right: unset;
+        top: 0;
+      }
+      .single-timeline:nth-child(2n) .timeline-text {
+        padding-left: 30px;
+        padding-right: 0;
+        text-align: left;
+      }
+      .single-timeline:nth-child(2n) .t-square {
+        left: -6px;
+        right: unset;
+      }
+      .timeline-blank {
+        display: none;
+      }
+      .timeline-text {
+        width: 100%;
+      }
+      .single-timeline:nth-child(even) .timeline-text span {
+        text-align: left !important;
+      }
+    }
+    @media all and (max-width: 575px) {
+    }
+    @media all and (max-width: 360px) {
+      .all-timelines::before {
+        top: 32px;
+      }
+    }
+  }
+
+  footer {
+    text-align: center;}
+    
+    .footer-container {
+    background-color: #fff7f0;
+    display: flex;}
+    
+    .footer-container a {
+    color: #1f2937;
+    padding: 42px 16px;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: medium;}
+    
+    .footer-left {
+    margin-right: auto}
+    
+    .fa:hover {
+    color: #45405F;}
+    
+    .footer-icons {
+    justify-content: space-between;
+    padding: 16px 64px 0px 0px}
+    
+    .footer-icons ul {
+    list-style-type: none;}
+    
+    .footer-icons li {
+    display: inline-block;}
+    
+    .footer-right {
+    margin-left: auto}
+    
+    .copyright 
+    {background-color: #F5F6F7;
+    overflow: hidden;}
+
+    #portfolio {
+      color: #1f2937;
+      margin-top: 4rem;
+      padding-top: 4rem;
+      text-align: left;
+      margin-left:50px;
+  }
+
+
+h4{
+  font-size:25px;
+}
+
+h1{
+  font-size: 31px;
+}
+
+h10{
+ font-size: 17px;
+}

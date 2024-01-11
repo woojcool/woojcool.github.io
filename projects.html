@@ -25,33 +25,85 @@
         <input type="checkbox" name="check" id="check" />
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="about.html">Experience</a></li>
           <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
     </nav>
     <section class="section">
-      <div class="section__container">
-        <div class="content">
-          <p class="subtitle">Projects</p>
-          <div class="project-box" onclick="redirectToGitHub('premier-league-live-stats')">
-            <a href="https://confused-pig-wear.cyclic.app/">Premier League Live Stats</a>
+
+      <!-- portfolio section-->
+    <section id="portfolio">
+      <div class="container mt-3">
+          <h1 class="text-center">Projects</h1><br>
+          <div class="row">
+              <div class="col-lg-4 mt-4">
+                  <div class="card">
+                      <div class="card-body">
+                          <h4 class="card-title">Premier League Stats Checker</h4>
+                          <h10><b>Skills Used: HTML, CSS, Javascript, Node.js, Rest API, MongoDB</b></h10>
+                          <ul>
+                            <li><a href="https://github.com/woojcool/premstats" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
+                            <li><a href = "https://confused-pig-wear.cyclic.app/" target="_blank"><i class="fa fa-link fa-2x"></i></a></li>
+                        </ul>
+                          <p class="card-text">
+                            ⁍ Designed and developed an interactive website dedicated to providing real-time statistics and scores for Premier League teams<br>
+                            ⁍ Engineered backend services using Node.js, ensuring efficient data handling and server-side logic implementation<br>
+                            ⁍ Implemented MongoDB for database solutions, focusing on user data storage including email addresses and team
+                            preferences, ensuring data integrity and scalability<br>
+                            ⁍ Successfully integrated the www.api-football.com API to fetch live scores and detailed statistics, providing users with
+                            up-to-date and accurate football data<br>
+                            ⁍ Crafted an engaging user interface employing HTML/CSS, focusing on responsive design principles to enhance user
+                            experience across various devices</p>
+
+                      </div>
+                  </div>
+              </div>
+              <br>
+              <div class="col-lg-4 mt-4">
+                  <div class="card portfolioContent">
+                      <div class="card-body">
+                          <h4 class="card-title">Grades Calculator</h4>
+                          <h10><b>Skills Used: C</b></h10>
+                          <ul>
+                            <li><a href="https://github.com/woojcool/gradescalculator" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
+                        </ul>
+                          <p class="card-text">
+                            ⁍ Initiated and completed a comprehensive final grade calculator, built to assist students and educators in accurately determining semester grades. <br>
+                            ⁍ Developed the core algorithm in C programming language, incorporating advanced features to account for dropped grades, late submission penalties, and extra credit.
+                            </p>
+
+                      </div>
+                  </div>
+              </div>
+
+              </div>
           </div>
-          <div class="project-box" onclick="redirectToGitHub('katkit-bluegames')">
-            <a href="https://github.com/woojcool/gradescalculator">Grades Calculator</a>
+  </section>
+      <footer>
+        <div class="footer-container">
+          <a class="link footer-left" href="index.html">https://woojcool.github.io/</a>
+          <div class="footer-icons">
+            <ul>
+              <li><a href="https://www.linkedin.com/in/woojune/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
+              <li><a href="https://www.instagram.com/woojunelee/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></li>
+              <li><a href="https://github.com/woojcool" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
+              <li><a href = "mailto: june2002@umd.edu" target="_blank"><i class="fa fa-envelope fa-2x"></i></a></li>
+          </ul>
           </div>
+          <a class="link footer-right" href="mailto: june2002@umd.edu">Email: june2002@umd.edu</a>
         </div>
+    
+      <div class="copyright">
+        <p style="color: #fff7f0;">
+        </p>
       </div>
+    </footer>
+    
     </section>
-    <script>
-        function redirectToGitHub(projectName) {
-            if (projectName === 'premier-league-live-stats') {
-                window.location.href = 'https://confused-pig-wear.cyclic.app/';
-            } else {
-                window.location.href = `https://github.com/woojcool/${gradescalculator}`;
-            }
-        }
-    </script>
+ 
+    <hr>
   </body>
+  
+
 </html>
